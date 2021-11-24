@@ -1,0 +1,13 @@
+.ProductDisplayImage,
+.DisplayImage{
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+}
+
+@media (min-width: 64em){
+  .ProductDisplayImage {
+    /* height: 100%; */
+  }
+  
+}

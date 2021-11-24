@@ -1,0 +1,261 @@
+.NavButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.NavButton img {
+  margin-top: 0.5rem;
+}
+
+.MobileView {
+  display: none;
+}
+
+.NavButton img {
+  display: inline;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.HeaderLogo {
+  display: inline-block;
+  margin-left: 1.25rem;
+  height: 1.75rem;
+  /* background-color: chocolate; */
+}
+
+.RightDivision {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  /* background-color: burlywood; */
+}
+
+.CartBlock {
+  position: relative;
+  cursor: pointer;
+}
+
+.CartBlock span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  background-color: hsl(26, 100%, 55%);
+  padding: 0.1rem 0.625rem;
+  border-radius: 0.75rem;
+  right: -8px;
+  top: -5px;
+  transform: translate(0.5px, 0.1px);
+  animation: cartEffect 2s infinite;
+}
+
+@keyframes cartEffect {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.HeaderIcons {
+  height: 1.6rem;
+  width: 1.75rem;
+  transform: translate(0, 10%);
+  filter: brightness(50%);
+}
+
+.HeaderIconsImage {
+  display: block;
+  height: 2.1rem;
+  width: 2.1rem;
+  border-radius: 50%;
+  /* transform: translate(0, -12.5%); */
+  filter: unset;
+  position: relative;
+}
+
+.ImageBorderCircle {
+  position: absolute;
+  height: 2.6rem;
+  width: 2.6rem;
+  top: -10%;
+  left: -11%;
+  border-radius: 50%;
+  /* border: 2px solid hsl(26, 100%, 55%); */
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    background-color: hsl(26, 100%, 55%);
+    box-shadow: 0 0 1px 1px hsl(26, 100%, 55%);
+    transform: rotate(1turn);
+  }
+}
+
+.MenuContainer {
+  display: flex;
+  width: 67.5%;
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.CloseButton {
+  border: none;
+  padding: 1rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.Menu li {
+  font-size: 1.6rem;
+}
+
+.Menu li a {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+}
+
+@media (min-width: 25em) {
+  .ImageBorderCircle {
+    top: -10%;
+    left: -9.5%;
+  }
+
+}
+
+@media (min-width: 64em) {
+  
+  .NavButton,
+  .CloseButton {
+    display: none;
+  }
+
+  .HeaderLogo {
+    display: inline-block;
+    margin: 0;
+    height: 1.25rem;
+    /* background-color: chocolate; */
+  }
+
+  .MobileView {
+    display: flex;
+    width: auto;
+    padding: 0 0 0 2.5rem;
+    background-color: transparent;
+    flex-direction: row;
+    /* background-color: brown; */
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 2.5rem;
+    /* background-color: blanchedalmond; */
+  }
+
+  .Menu li {
+    font-size: 1rem;
+    padding: 2.75rem 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+
+  .Menu li:hover {
+    border-bottom-color: hsl(26, 100%, 55%);
+    transition: border ease-in 0.4s;
+  }
+
+  .Menu li a {
+    color: hsl(219, 9%, 45%);
+    font-weight: 400;
+  }
+
+  .RightDivision {
+    gap: 3.5rem;
+    /* background-color: burlywood; */
+  }
+
+  .HeaderIcons {
+    display: inline-block;
+    height: 1.4rem;
+    width: 1.5rem;
+  }
+  
+  .HeaderIconsImage {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    /* transform: translate(0, -12.5%); */
+    filter: unset;
+    position: relative;
+  }
+  .ImageBorderCircle {
+    height: 4rem;
+    width: 4rem;
+    top: -6%;
+    left: -8%;
+    /* border: 2px solid hsl(26, 100%, 55%); */
+  }
+  
+}
+
+@media (min-width: 85em) {
+  .HeaderLogo {
+    height: 1.75rem;
+  }
+
+  .MobileView {
+    padding: 0 0 0 5rem;
+  }
+
+  .Menu {
+    gap: 3rem;
+  }
+
+  .Menu li {
+    font-size: 1.25rem;
+    padding: 2.75rem 0;
+  }
+
+  .RightDivision {
+    gap: 4rem;
+    /* background-color: burlywood; */
+  }
+
+  .HeaderIcons {
+    height: 1.6rem;
+    width: 1.75rem;
+  }  
+}
+

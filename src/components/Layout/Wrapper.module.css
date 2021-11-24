@@ -1,0 +1,20 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 64em){
+    .Wrapper {
+        flex-direction: row;
+        width: 90%;
+        gap: 6rem;
+    }   
+}
+
+@media (min-width: 85em){
+    .Wrapper {
+        gap: 3.6rem;
+    }   
+}

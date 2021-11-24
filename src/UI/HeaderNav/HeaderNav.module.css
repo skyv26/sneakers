@@ -1,0 +1,15 @@
+.HeaderNav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 2rem;
+    /* background-color: cornflowerblue; */
+}
+
+@media (min-width: 64em){
+    .HeaderNav {
+        padding: 0;
+        border-bottom: 1px solid hsla(217, 9%, 45%, 0.123);
+        margin-bottom: 6rem;
+    }   
+}

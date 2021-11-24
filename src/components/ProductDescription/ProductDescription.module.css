@@ -1,0 +1,174 @@
+.DescCardHeading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+}
+
+.DescCardHeadingTitle {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+  color: hsl(220, 13%, 13%);
+}
+
+.DescCardInfo {
+  font-size: 1.28rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: hsl(219, 9%, 45%);
+}
+
+.ProductPrice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ProductPrice div {
+  display: flex;
+  align-items: center;
+}
+
+.ProductPrice div p:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.ProductPrice div p:nth-child(2) {
+  font-size: 1.4rem;
+  background-color: hsl(25, 100%, 94%);
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-right: 1rem;
+  color: hsl(26, 100%, 55%);
+}
+
+.StrikedText {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(219, 9%, 45%);
+  text-decoration: line-through;
+  margin-left: auto;
+}
+
+@media (min-width: 25em) {
+  .DescCardHeadingTitle {
+    font-size: 2.75rem;
+  }
+
+  .DescCardInfo {
+    font-size: 1.5rem;
+  }
+  .ProductPrice p:nth-child(1) {
+    font-size: 2.75rem;
+  }
+
+  .ProductPrice p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .ProductPrice p:nth-child(3) {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .DescCardHeading {
+    font-size: 0.9rem;
+  }
+
+  .DescCardHeadingTitle {
+    font-size: 2.5rem;
+  }
+
+  .DescCardInfo {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .ProductPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .ProductPrice div p:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .ProductPrice div p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .StrikedText {
+    margin-left: 0;
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 85em) {
+  .DescCardHeading {
+    font-size: 1rem;
+  }
+
+  .DescCardHeadingTitle {
+    font-size: 3rem;
+  }
+
+  .DescCardInfo {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  .ProductPrice {
+    gap: 1rem;
+  }
+
+  .ProductPrice div p:nth-child(1) {
+    font-size: 2.25rem;
+  }
+
+  .ProductPrice div p:nth-child(2) {
+    font-size: 1.25rem;
+  }
+
+  .StrikedText {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 90em) {
+    .DescCardHeading {
+      font-size: 1.25rem;
+    }
+  
+    .DescCardHeadingTitle {
+      font-size: 3.25rem;
+    }
+  
+    .DescCardInfo {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  
+    .ProductPrice {
+      gap: 1rem;
+    }
+  
+    .ProductPrice div p:nth-child(1) {
+      font-size: 2.75rem;
+    }
+  
+    .ProductPrice div p:nth-child(2) {
+      font-size: 1.5rem;
+    }
+  
+    .StrikedText {
+      font-size: 1.4rem !important;
+    }
+  }
+  

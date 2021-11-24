@@ -1,0 +1,73 @@
+.Footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 42%;
+}
+
+.Footer p a {
+  text-decoration: none;
+  color: hsl(23, 100%, 55%);
+  font-weight: bold;
+}
+
+@media (min-width: 20em) {
+  .Footer {
+    margin-top: 68%;
+  }
+}
+
+@media (min-width: 23em) {
+  .Footer {
+    margin-top: 58%;
+  }
+}
+
+@media (min-width: 23em) and (min-height: 45.9em) {
+    .Footer {
+      margin-top: 20%;
+    }
+  }
+  
+
+@media (min-width: 25em) {
+  .Footer {
+    margin-top: 68%;
+  }
+}
+
+@media (min-width: 25em) and (min-height: 45.9em) {
+  .Footer {
+    margin-top: 35%;
+  }
+}
+
+@media (min-width: 25.6em) and (min-height: 45em) {
+  .Footer {
+    margin-top: 55%;
+  }
+}
+
+@media (min-width: 25.8em) and (min-height: 45.9em) {
+  .Footer {
+    margin-top: 55%;
+  }
+}
+
+@media (min-width: 40em){
+    .Footer {
+        margin-top: 83%;
+      }
+  }
+
+@media (min-width: 64em) {
+    .Footer {
+        margin-top: -5%;
+      } 
+}
+
+@media (min-width: 85em) {
+    .Footer {
+        margin-top: -1.5%;
+      } 
+}
+

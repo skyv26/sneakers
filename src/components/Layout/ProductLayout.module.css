@@ -1,0 +1,19 @@
+.Layout {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+
+@media (min-width: 64em){
+    .Layout {
+        width: 80%;
+    }
+}
+
+@media (min-width: 85em){
+    .Layout {
+        width: 70%;
+    }
+  }
+  
